@@ -1,0 +1,621 @@
+{
+  "snippets": [
+    {
+      "type": 0,
+      "title": "Hoi",
+      "short": "Zeg hallo aan de gebruiker",
+      "description": "Ze hallo of gedag aan gebruiker",
+      "body": "",
+      "tags": ["hoi", "hallo", "goeden morgen", "goeden dag"],
+      "response": "Hallo, hoe kan ik je [helpen] vandaag?",
+      "actions": [
+        {
+          "name": "Ik heb hulp nodig",
+          "action": "Ik weet niet wat ik kan doen, kun je mij misschien helpen?"
+        },
+        {
+          "name": "Ik zoek een vakantie",
+          "action": "Ik ben opzoek naar een vakantie."
+        }
+      ]
+    },
+
+    {
+      "type": 0,
+      "title": "Vind de perfecte vakantie",
+      "short": "Vind de perfecte vakantie die bij jou past",
+      "description": "Wil je op vakantie? Opzoek naar de zon of ben je meer van het cultuur snuiven? Vind hier je perfecte vakantie",
+      "body": "",
+      "tags": ["vakantie", "zon"],
+      "response": "Lekker op vakantie? Waar ben je precies naar opzoek?",
+      "actions": [
+        {
+          "name": "Frankrijk",
+          "action": "Ik wil op vakantie naar Frankrijk"
+        },
+        {
+          "name": "Duitsland",
+          "action": "Ik wil op vakantie naar Duitsland"
+        }
+      ]
+    },
+
+    {
+      "type": 1,
+      "title": "Top 100 Mooiste steden ter wereld",
+      "short": "Zes REIZEN-medewerkers, samen zo’n 300 jaar stedenreiservaring rijk, stelden deze Wereldsteden Top 100 samen.",
+      "description": "Zes doorgewinterde REIZEN-medewerkers, samen zo’n 300 jaar stedenreiservaring, stelden deze Wereldsteden Top 100 samen. Een lijst waarin pracht, (on)bereikbaarheid, budget & verrassing in delicate balans zijn. We tellen af van 100 naar nummer 1.",
+      "body": "",
+      "response": "Bekijk anders onze top 100 mooiste steden ter wereld!",
+      "tags": ["vakantie", "steden", "reis", "reizen", "wereldsteden"],
+      "image": "assets/images/snippets/mooiste.steden.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Vakantie ideeën en tips",
+      "short": "Een vakantie boeken.",
+      "description": "Een vakantie boeken. Heel eenvoudig als je weet waar je naar toe wilt, maar wat als je je wilt laten verrassen door de wereld? Naar een land, streek of stad waar je nog nooit bent geweest of waar je zelfs nog nooit van hebt gehoord? Een plek die even anders is dan anders. Laat je inspireren door onze tips en ideeën voor je volgende vakantie!",
+      "body": "",
+      "response": "Laat je inspireren door onze tips en ideeën voor je volgende vakantie!",
+      "tags": ["vakantie", "inspireren", "tips"],
+      "image": "assets/images/snippets/vakantie.idee.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Maak je auto vakantieklaar",
+      "short": "De kans op autopech wordt een stuk kleiner als je enkele eenvoudige controles uitvoert.",
+      "description": "Laten we goed voorbereid op vakantie gaan. Want jouw vakantie ... is géén vakantie voor je auto. Die moet honderden kilometers hard werken. Soms over wegen vol gaten of zand en hobbelpaadjes en als het even tegenzit: aan de kant met een lekke band!",
+      "body": "",
+      "response": "Gelukkig kun je, met de juiste voorbereiding, de kans op pech wel een stuk verkleinen.",
+      "tags": ["vakantie", "autopech", "controles"],
+      "image": "assets/images/snippets/autopech.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "ANWB Landeninformatie",
+      "short": "Selecteer je vakantiebestemming en je krijgt alle praktische én toeristische informatie.",
+      "description": "Ga je binnenkort op vakantie naar het buitenland? Bereid je reis en verblijf dan goed voor met de ANWB Landeninformatie. Je vindt er alle praktische informatie die je nodig hebt over bijvoorbeeld de lokale verkeersregels, wat er verplicht mee moet in de auto of wat de lokale munteenheid is. Hieronder kun je jouw vakantiebestemming kiezen. We wensen je alvast een prettige vakantie.",
+      "body": "",
+      "response": "Opzoek naar een mooi vakantieland? Bekijk al onze praktische info.",
+      "tags": ["vakantie", "info", "praktische"],
+      "image": "assets/images/snippets/praktische.tips.jpg"
+    },
+
+    {
+      "type": 2,
+      "title": "Zoek je vakantie met ledenvoordeel",
+      "short": "Hoe langer lid, hoe meer voordeel.",
+      "description": "Zoek je vakantie met ledenvoordeel, Hoe langer lid, hoe meer voordeel",
+      "body": "",
+      "response": "Zoek je vakantie met ledenvoordeel, Hoe langer lid, hoe meer voordeel",
+      "tags": ["reizen", "vakantie", "ledenvoordeel"],
+      "image": "assets/images/snippets/travel_pic.png"
+    },
+
+    {
+      "type": 3,
+      "title": "Reisgids voor levensgenieters",
+      "short": "Dé complete reisgids voor liefhebbers van het goede leven met een passie voor Frankrijk!",
+      "description": "De vrienden Rik Felderhof en Hans Melissen reizen op hun dooie gemak vanuit Limburg via de Ardennen, Lotharingen, Bourgogne naar het zuiden van Frankrijk. Ook de villa uit Villa Felderhof wordt getrakteerd op een bezoek. Een heerlijke route vol genietmomenten voor onderweg.",
+      "body": "",
+      "response": "",
+      "tags": ["reisgids", "vakantie", "levensgenieters", "Frankrijk"],
+      "image": "assets/images/snippets/levensgenieters.jpg"
+    },
+
+    {
+      "type": 0,
+      "title": "Vakantie Frankrijk",
+      "short": "Vive la France! Wil je op vakantie naar Frankrijk, het land van de kaas, wijn en croissants?",
+      "description": "Vive la France! Wil je op vakantie naar Frankrijk, het land van de kaas, wijn en croissants? Van strand, natuur, cultuur én de bourgondische keuken? Dan zit je hier goed. Bij ons boek je de allerleukste vakanties naar Frankrijk en vind je alle (voorbereidende) reisinformatie die je nodig hebt. Of je nu een camping zoekt, tol wilt berekenen of meer info zoekt over een Franse streek, je vindt het hier!",
+      "body": "",
+      "tags": ["vakantie", "frankrijk"],
+      "response": "Vive la France! Wat wil je gaan doen?",
+      "actions": [
+        {
+          "name": "Kamperen",
+          "action": "Ik wil gaan kamperen in Frankrijk"
+        },
+        {
+          "name": "Wintersport",
+          "action": "Ik wil op wintersport in Frankrijk"
+        }
+      ]
+    },
+
+    {
+      "type": 1,
+      "title": "Tips vakantie Frankrijk",
+      "short": "Een vakantie Frankrijk: genoeg te doen en te zien. Laat je voor je volgende reis inspireren door ANWB.",
+      "description": "Dat een vakantie naar Frankrijk leuk is, weten we allemaal. Maar wat zijn de hoogtepunten, de leukste regio's of steden? Wat móet je zien, doen, proeven of beleven in het land van kaas, wijn en croissants? Samen met de redactie van REIZEN Magazine vind je hier onze tips voor een vakantie Frankrijk. Laat je inspireren en geniet van de voorpret...",
+      "body": "",
+      "response": "Gelukkig kun je, met de juiste voorbereiding, de kans op pech wel een stuk verkleinen.",
+      "tags": ["Frankrijk", "reis", "inspiratie"],
+      "image": "assets/images/snippets/tips.frankrijk.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Wijnstreken Frankrijk: waar vind je de lekkerste wijn?",
+      "short": "Zeg je Frankrijk, dan denk je aan wijn. Maar welke streek is nu de ultieme wijnstreek voor wijnliefhebbers?",
+      "description": "Zeg je 'Frankrijk', dan denk je aan wijn, toch? Voor de echte wijnliefhebber is er dan ook niets mooiers dan de Franse wijnvelden en een gezellige wijnproeverij. En ook zo fijn: met een goede fles Franse wijn kun je thuis nog heerlijk nagenieten van je vakantie. We zetten de wijnstreken in Frankrijk mét bijbehorende wijnen op een rij. Kun je op en ná je vakantie heerlijk wegdromen...",
+      "body": "",
+      "response": "Gelukkig kun je, met de juiste voorbereiding, de kans op pech wel een stuk verkleinen.",
+      "tags": ["Frankrijk", "wijnstreken", "wijn"],
+      "image": "assets/images/snippets/wijn.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Kamperen Dordogne",
+      "short": "De Dordogne is een ideale streek om te gaan kamperen. Wil je weten waarom? Dat leggen we je graag uit.",
+      "description": "In het dal van de Dordogne vind je veel, vaak mooi gelegen campings. Ze zijn doorgaans van april tot begin december geopend en hebben een classificering van één tot vier sterren, afhankelijk van het voorzieningenniveau. ",
+      "body": "",
+      "tags": ["kamperen", "Frankrijk", "Dordogne"],
+      "image": "assets/images/snippets/dordogne.jpeg"
+    },
+
+    {
+      "type": 1,
+      "title": "Kamperen in Frankrijk",
+      "short": "Kamperen in Frankrijk betekent dat cultuur en historie nooit ver weg zijn. Ontdek de mooiste streken en laat je inspireren.",
+      "description": "Frankrijk is een echt kampeerland. Als je van de zon wilt genieten, dan biedt Zuid-Frankrijk alles wat je zoekt. Wil je het wat koeler houden, dan heeft Noord-Frankrijk een gematigd klimaat. Kamperen in Frankrijk betekent dat cultuur en historie nooit ver weg zijn. Er zijn talloze kastelen, de natuur is adembenemend en je kunt er heerlijk eten. Hieronder vind je populaire kampeerstreken en hebben we wat type campings op een rijtje gezet.",
+      "body": "",
+      "tags": ["kamperen", "Frankrijk", "camping"],
+      "image": "assets/images/snippets/frankrijk.jpg",
+      "response": "Frankrijk is een echt kampeerland, weet je al waar je naar toe zou willen gaan?",
+      "actions": [
+        {
+          "name": "Dordogne",
+          "action": "Kamperen in de Dordogne"
+        },
+        {
+          "name": "Provence",
+          "action": "Kamperen in de Provence"
+        }
+      ]
+    },
+
+    {
+      "type": 3,
+      "title": "Camping Les Druides",
+      "short": "Een lekker rustige camping dicht bij Carnac en het strand. Mooie staanplaatsen, aardig personeel en een fijn zwembad maken deze camping helemaal af.",
+      "description": "Deze nette en niet al te grote camping is vlak en de verschillende kampeerveldjes worden gescheiden door heggen. Ook de meeste staanplaatsen worden door heggen verdeeld. Een deel van de kampeerplaatsen is voorzien van schaduw. De sanitaire voorzieningen zijn schoon en ruimschoots voorhanden. De communicatie verloopt meteen vanaf de boeking al netjes en zelfs in het Nederlands. Wil je graag iets huren, dan heb je de keus uit verschillende mobilhomes en appartementen.",
+      "body": "",
+      "tags": ["kamperen", "Frankrijk", "camping", "Provence"],
+      "image": "assets/images/snippets/camping1.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Yelloh! Village Port de Plaisance",
+      "short": "Bretagne priemt als een wijsvinger in de Atlantische Oceaan, aan de westkust van Frankrijk.",
+      "description": "Deze camping telt voor het overgrote deel huuraccommodaties en er zijn vijftig staanplaatsen voor tenten, caravan, vouwwagens en campers. De huuraccommodaties variëren van cottages en chalets met alle comfort van het moderne leven tot en met de Coco Sweet-tenten. Na de entree zijn de receptie, de campingwinkel, het zwemparadijs, een speelveld, een speeltuin, het voetbalveld en een beachvolleybalveld. Rechts van de entree en verder naar achteren liggen de kampeervelde met wat bomen.",
+      "body": "",
+      "tags": ["kamperen", "Frankrijk", "camping", "Provence"],
+      "image": "assets/images/snippets/camping2.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Camping La Genèse",
+      "short": "Grote camping in een bosrijke omgeving, in het dal van de rivier de Cèze.",
+      "description": "Je kampeert hier op gras, bosgrond of zand. Als je met je eigen tent, caravan of camper boekt, kies je tussen staanplaatsen in het levendige deel bij de voorzieningen, of rustigere plaatsen wat verder of wat hoger gelegen. Ook zijn er plaatsen dicht bij de rivier. Veel staanplaatsen liggen onder hoge bomen die voor schaduw zorgen. Als je liever wilt huren, is er keuze uit chalets, mobilhomes en glampingtenten.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Provence"],
+      "image": "assets/images/snippets/camping3.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Camping Le Col d'Ibardin",
+      "short": "Midden in het Baskenland en aan de voet van de Pyreneeën ligt camping Le Col d’Ibardin, in de schaduw van eeuwenoude eiken.",
+      "description": "Hier in Urrugne, op 7 kilometer van de kust, is het genieten van watersporten zoals surfen en zeekajakken. Verder kun je wandelen en fietsen door de Pyreneeën en op de camping duik je de zwembaden in. Deze middelgrote camping kent flinke hoogteverschillen; de staanplaatsen zijn soms geaccidenteerd en soms terrasvormig. Er zijn soms lange snoeren nodig voor elektriciteit bij de staanplaatsen. De plaatsen zijn van elkaar gescheiden door buxushagen, door een klein riviertje en de eeuwenoude eiken. Je kunt hier ook kiezen voor een huuraccommodatie: er zijn mobilhomes, chalets en tentlodges te huur, die zijn verspreid over de camping.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Dordogne"],
+      "image": "assets/images/snippets/camping4.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Camping La Brande",
+      "short": "Op het Île d’Oléron voor de Franse westkust vind je deze middelgrote camping.",
+      "description": "Met je eigen tent, caravan of camper boek je een van de toeristische staanplaatsen op deze licht glooiende camping. Bomen en groene heggetjes rondom en over de kampeervelden geven je eilandvakantie een groen decor . Wil je liever huren, dan kun je kiezen uit een scala aan chalets en mobilhomes, elk met hun eigen charme, grootte en voorzieningen.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Dordogne"],
+      "image": "assets/images/snippets/camping5.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Camping Sunêlia Les Tropiques",
+      "short": "Grote camping op 500 m van het strand en de zee in Torreilles-Plage",
+      "description": "De camping is gevarieerd begroeid met palmbomen en loof- en naaldbomen. Met eigen camper, tent of caravan boek je een van de toeristische staanplaatsen op gras of op kiezels. De meeste staanplaatsen zijn afgebakend met oleanderhagen. Sommige plaatsen liggen zonnig, andere bieden door de bomen meer schaduw. Als je wilt huren, heb je hier een ruime keuze uit mobilhomes, glampingtenten, cottages en bungalows. Elk met eigen charme, comfort en grootte (van 2 tot 4-persoons tot aan 6 tot 8-persoonsaccommodaties).",
+      "body": "",
+      "tags": ["kamperen", "camping", "Dordogne"],
+      "image": "assets/images/snippets/camping6.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Wintersport in Frankrijk",
+      "short": "Skiën in Frankrijk? Hier vind je de leukste skigebieden, het actuele weerbericht en scherpe aanbiedingen voor een skivakantie.",
+      "description": "Het land van de onbegrensde (ski-)mogelijkheden, dát is een wintersport in Frankrijk. Van hypermoderne skistations tot intieme dorpjes met die gezellige houten chalets. Je skivakantie Frankrijk wordt gegarandeerd een succes! Kom skiën in het populaire Val Thorens of kies of voor het authentieke Châtel, met een gezellig dorps karakter. De fanatieke alpineskiër kiest voor het moderne Avoriaz of voor het functionele Tignes met skiliften voor de deur.",
+      "body": "",
+      "tags": ["wintersport", "Frankrijk", "skiën", "skivakantie"],
+      "image": "assets/images/snippets/frankrijk.skie.jpg",
+      "response": "Het land van de onbegrensde (ski-)mogelijkheden, dát is een wintersport in Frankrijk."
+    },
+
+    {
+      "type": 2,
+      "title": "Wintersport Frankrijk",
+      "short": "De Fransen hebben hele dorpen, alleen voor winterse activiteiten, gebouwd!",
+      "description": "De Franse Alpen spelen een belangrijke rol in de wintersportscene. De temperatuur op de Alpen is sterk afhankelijk van de hoogte waarop je je bevindt. Deze neemt gemiddeld een graad af wanneer je 200 meter stijgt! Ook langlaufen 'ski de fond' is hier een belangrijke sport. Je vindt in de meeste skigebieden vele kilometers loipes door unieke natuurgebieden.",
+      "body": "",
+      "tags": ["wintersport", "Frankrijk", "boeken"]
+    },
+
+    {
+      "type": 1,
+        "title": "Sneeuwhoogtes in Frankrijk",
+      "short": "Bekijk hier de actuele sneeuwinformatie in ruim 65 wintersportplaatsen in Frankrijk.",
+      "description": "Hier vind je een actueel overzicht van de sneeuwhoogtes in Frankrijk.",
+      "body": "",
+      "tags": ["wintersport", "Frankrijk", "sneeuwhoogtes"],
+      "image": "assets/images/snippets/sneeuwhoogtes.jpg"
+    },
+
+    {
+      "type": 1,
+        "title": "Verplicht in Frankrijk",
+      "short": "In de winter gelden soms andere regels over wat er verplicht mee moet in de auto. Ga goed voorbereid op weg met onze handige winterchecklist.",
+      "description": "Ga je met de auto op vakantie naar Frankrijk, houd er dan rekening mee dat je een aantal items verplicht mee wilt nemen. Denk bijvoorbeeld aan een alcoholtester. We zetten de verplichte producten voor je op een rij.",
+      "body": "",
+      "tags": ["wintersport", "Frankrijk", "winterchecklist"],
+      "image": "assets/images/snippets/checklist.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "8-daagse wintersport Le Bonheur des Pistes",
+      "short": "Rustig gelegen appartementen direct aan de piste en bij skilift 'Le Vieux Moulin'.",
+      "description": "Val-Cenis is een echte familiebestemming, vlak bij de Frans-Italiaanse grens. Een groot en goed geprijsd skigebied dat nog niet zo heel bekend is bij de Nederlanders. En dat terwijl het vanwege de vele groene en blauwe pistes uitstekend geschikt is voor kids die voor het eerst gaan skiën. De langste groene piste ter wereld ligt in dit gebied! Maar ook wie al wat meer ervaring heeft vindt hier voldoende uitdaging. ",
+      "body": "",
+      "tags": ["wintersport", "Avoriaz", "ski"],
+      "image": "assets/images/snippets/wintersport1.jpg"
+    },
+    {
+      "type": 3,
+      "title": "8-daagse wintersport Appartementen Les 4 Vallées",
+      "short": "Een echte gezinsbestemming met vele mogelijkheden voor beginnende en gevorderde skiërs!",
+      "description": "Geniet van de talrijke mogelijkheden in dit fijne gebied. De appartementen zijn een ideaal uitgangspunt voor een skivakantie met kinderen. Vooral als je kinderen al kunnen skiën liggen de appartementen ideaal:  je zit aan de piste en skiet zo naar de lift. Dus geen gesleep met ski's en er zijn veel blauwe pistes. Door de verbinding met Valmorel heb je vanuit St. François Longchamps toegang tot het grote skigebied Le Grand Domaine met maar liefst 165 km aan piste!",
+      "body": "",
+      "tags": ["wintersport", "Avoriaz", "ski"],
+      "image": "assets/images/snippets/wintersport2.jpg"
+    },
+    {
+      "type": 3,
+      "title": "8-daagse wintersport Les Portes du Mont Blanc",
+      "short": "Nieuw in het Pharos assortiment. Geniet van het skiën in Vallorcine, onderdeel van het grote skidomein Chamonix- Mont Blanc.",
+      "description": "Vanuit je appartement stap je zo in de naastgelegen cabinelift om te gaan skiën. Vallorcine maakt deel uit van de skigebieden de Balme en Domaine de la Poya (ca. 29km pistes in totaal) met voornamelijk groene en blauwe pistes, ideaal dus voor kinderen en beginners. Wil je meer dan 29 kilometer piste? Probeer dan met een overkoepelende skipas de andere skigebieden in de vallei van Chamonix (o.a. Brévent en Flegère). Met de trein ben je zo in Chamonix en de andere dorpen in de vallei om daar de pistes te ontdekken. Bij de receptie van het appartement krijgen een gastenkaart waarmee je gratis van de trein gebruik kunt maken. Zo kun je de auto de hele week laten staan!",
+      "body": "",
+      "tags": ["wintersport", "Avoriaz", "ski"],
+      "image": "assets/images/snippets/wintersport3.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "8-daagse wintersport Les Portes du Grand Massif",
+      "short": "Deze moderne appartementen in authentieke bouwstijl zijn nieuw in het Pharos assortiment! Ontdek de pistes van Flaine met uitzicht op de Mont Blanc.",
+      "description": "Vanuit je appartement steek je de weg over en sta je direct op de piste naar de dichtstbijzijnde skilift. Flaine maakt deel uit van het skigebied Le Grand Massif met in totaal maar liefts 265 km piste! Hiermee is Le Grand Massif het 4e grootste aaneengesloten skigebied van Frankrijk. De pistes zijn zeer gevarieerd en het uitzicht op de Mont-Blanc is fantastisch. De langste blauwe piste van Europa ligt ook in dit gebied, de 14 kilometer lange Cascade-piste begint op de top van de Grandes Platières (2.500m) en gaat geleidelijk naar beneden tot 1.700m.",
+      "body": "",
+      "tags": ["wintersport", "Morzine", "ski"],
+      "image": "assets/images/snippets/wintersport4.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "8-daagse wintersport Les Chalets de Saint Sorlin",
+      "short": "Saint Sorlin d'Arves is een echt authentiek en gezellig familiedorp zonder hoogbouw. Vanuit Saint Sorlin d'Arves heb je toegang tot het skigebied van Les Sybelles.",
+      "description": "Saint Sorlin d'Arves is een charmant bergdorp gelegen aan de voet van de Col de la Croix de Fer. Vanuit Saint Sorlin d'Arves heb je toegang tot het grote skigebied Les Sybelles, wat met in totaal 310 km aan piste het vierde grootste skigebied van Frankrijk is! De sneeuwzekerheid door een hoge ligging én de ligging in de zon maken Saint Sorlin d'Arves een perfecte wintersportbestemming. De skibus stopt voor de deur en deze brengt je zo naar de eerste liften en pistes.  ",
+      "body": "",
+      "tags": ["wintersport", "Morzine", "ski"],
+      "image": "assets/images/snippets/wintersport5.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "8-daagse wintersport Résidence les Gentianes",
+      "short": "Gresse-en-Vercors is een klein familie skiresort zo'n 50 kilometer ten zuiden van Grenoble, gelegen in het hart van het regionaal natuurpark van de Vercors.",
+      "description": "Beleef dit kleine skiresort in het hart van het regionaal natuurpark van de Vercors. Met in totaal 26 pistes is dit gebied uitstekend geschikt voor families. Ook als je weinig ski ervaring hebt kun je hier heerlijk skiën. Maar er is meer. De schitterende omgeving, de rust, de écht Franse sfeer en de vriendelijke prijzen maken van deze bij Nederlanders minder bekende skiregio dé plek om te ontdekken.",
+      "body": "",
+      "tags": ["wintersport", "Morzine", "ski"],
+      "image": "assets/images/snippets/wintersport6.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Hoe reis ik met de camper of caravan?",
+      "short": "Ideale gids met nuttige tips op het gebied van kamperen met camper of caravan.",
+      "description": "Ideale leidraad voor onvergetelijke kampeervakanties Met deze gids heeft kamperen geen geheimen meer. Ontdek wat het best bij je past: de caravan of de motorhome. Alles over modellen, nutsvoorzieningen en accessoires. Leer hoe je de caravan of motorhome perfect kunt laden. Nuttige tips om vloeiend te rijden. Regelgeving in diverse Europese landen. Veiligheid, onderhoud en stalling. Geen enkel aspect blijft ongemoeid. Bestel direct online bij ANWB.",
+      "body": "",
+      "tags": ["kamperen", "camping", "caravan", "camper"],
+      "image": "assets/images/snippets/camper.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Coleman Tent Bering",
+      "short": "Makkelijk op te zetten koepeltent waar ventilatie van groot belang is.",
+      "description": "Het ventileren bij polyester tenten is van groot belang. Door de ventilatie te gebruiken heeft u minder last van condensvorming. Condens kunt u uitsluitend verminderen door goed te ventileren. De buitentent van de Coleman Bering 4 is gemaakt van Polyester met een waterkolom van 3000 mm., de boogstokken zijn van glasfiber. Het vaste kuipgrondzeil is van PE gemaakt ook wel polyetyleen genoemd.Bestel Coleman Tent Bering direct online bij ANWB.",
+      "body": "",
+      "tags": ["kamperen", "camping", "tent"],
+      "image": "assets/images/snippets/tent.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "ANWB wegenatlas Frankrijk",
+      "short": "WA FRANKRIJK 1:300.000 ANWB",
+      "description": "Deze uitgebreide wegenatlas Frankrijk op A4 formaat biedt u actueel en gedetailleerd kaartwerk. De ANWB Wegenatlas Frankrijk biedt kaarten op een schaal van 1:300.000 (1 cm = 3 km) . De atlas wordt aangevuld met stadsplattegronden ( 1:15.000) en detailkaarten van grote agglomeraties (1:100.000). Ook bevat de atlas Europese hoofdwegen (1:4.000.000). Hiermee vindt u gemakkelijk de kortste weg of juist een leuke toeristische route.",
+      "body": "",
+      "tags": ["wegenatlas", "frankrijk"],
+      "image": "assets/images/snippets/wegenatlas.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Alles over gasflessen",
+      "short": "Gasflessen: alles wat je moet weten",
+      "description": "Wil je een gasfles kopen? Vergelijk dan de verschillende modellen in ons handige overzicht! Op vragen zoals of je propaan- of butaangas moet hebben, vind je ook antwoord. Heb je al een gasfles en wil je die vullen of ruilen? Waar dat kan en mag lees je bij de ANWB.",
+      "body": "",
+      "tags": ["kamperen", "camping", "gasflessen"],
+      "image": "assets/images/snippets/gasflessen.jpg"
+    },
+
+    {
+      "type": 0,
+      "title": "Vakantie Duitsland",
+      "short": "Wie schön! Wil je op vakantie naar Duitsland, het land met die adembenemende natuur?",
+      "description": "Wil je op vakantie naar Duitsland, het land met die adembenemende natuur? Met vakwerkhuizen, indrukwekkende musea én de typerende Biergarten? Dan zit je hier goed. Bij ons boek je de allerleukste vakanties naar Duitsland en vind je alle (voorbereidende) reisinformatie die je nodig hebt. Of je nu een autovakantie zoekt, een milieusticker nodig hebt, op stedentrip wilt naar Berlijn óf meer info zoekt over een Duitse streek, je vindt het hier! Van het schitterende Sauerland tot aan het betoverende Zwarte Woud.",
+      "body": "",
+      "tags": ["vakantie", "duitsland"],
+      "response": "Wie schön! Wat wil je gaan doen?",
+      "actions": [
+        {
+          "name": "Kamperen",
+          "action": "Ik wil kamperen naar Duitsland"
+        },
+        {
+          "name": "Wintersport",
+          "action": "Ik wil op wintersport naar Duitsland"
+        }
+      ]
+    },
+
+    {
+      "type": 1,
+      "title": "Plan je trip naar Duitsland",
+      "short": "Een trip naar Duitsland: genoeg te doen en te zien. Laat je voor je volgende reis inspireren door ANWB.",
+      "description": "Dat een trip naar Duitsland leuk is, weten we allemaal. Maar wat zijn de hoogtepunten, de leukste regio's of steden? Wat móet je zien, doen, proeven of beleven in het land van indrukwekkende natuur en cultuur? Samen met de redactie van REIZEN Magazine vindt je hier onze tips voor een vakantie Duitsland. Laat je inspireren en geniet van de voorpret...",
+      "body": "",
+      "tags": ["Duitsland", "tips"],
+      "image": "assets/images/snippets/duitsland.vakantie.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Wintersport in Duitsland",
+      "short": "Duitsland is ideaal voor een korte wintersportvakantie. Niet te ver rijden en toch even lekker er tussen uit.",
+      "description": "Op wintersport in Duitsland betekent een gezellige skivakantie dicht bij huis. Of je nu kort of lang wilt skiën, met de kinderen weg wil of met vrienden, je skivakantie Duitsland wordt gegarandeerd een succes! Van de fantastische wintersportsfeer in het bekende Garmisch-Partenkirchen tot aan Winterberg, ideaal voor een korte skivakantie. En van het beroemde Oberstdorf tot het authentieke Reit im Winkl. Duitsland heeft genoeg te bieden, waar wacht je nog op?",
+      "body": "",
+      "tags": ["vakantie","wintersport", "Duitsland"],
+      "image": "assets/images/snippets/wintersport.jpg",
+      "response": "Duitsland is ideaal voor een korte wintersportvakantie. Niet te ver rijden en toch even lekker er tussen uit."
+    },
+
+    {
+      "type": 2,
+      "title": "Wintersport Duitsland",
+      "short": "Boek je skivakantie Duitsland bij de ANWB! ",
+      "description": "Op wintersport in Duitsland betekent een gezellige skivakantie dicht bij huis. Of je nu kort of lang wilt skiën, met de kinderen weg wil of met vrienden, je skivakantie Duitsland wordt gegarandeerd een succes!",
+      "body": "",
+      "tags": ["wintersport", "Duitsland", "boeken"]
+    },
+
+    {
+      "type": 1,
+      "title": "TIP: top 10 zien in Duitsland",
+      "short": "Zet deze 10 bezienswaardigheden in Duitsland maar op je verlanglijst! Het zijn de allermooiste.",
+      "description": "Duitsland is een groot land met veel bezienswaardigheden. In dit artikel wordt de top 10 van beste bezienswaardigheden beschreven, gebaseerd op de uitkomsten van de ‘Top 100 app'.",
+      "body": "",
+      "tags": ["vakantie","top 10", "Duitsland", "bezienswaardigheden"],
+      "image": "assets/images/snippets/tips.duitsland.jpg"
+    },
+
+    {
+      "type": 1,
+      "title": "Kamperen in het mooie Duitsland",
+      "short": "Duitsland is een waar kampeerparadijs voor jong en oud. Zo zijn er genoeg kindvriendelijke campings te vinden maar ook rustige campings.",
+      "description": "Duitsland is een waar kampeerparadijs voor jong en oud. Zo zijn er genoeg kindvriendelijke campings te vinden maar ook rustige campings. Cultuurliefhebbers raken niet uitgekeken in Duitsland. Bezoek bijvoorbeeld delen van de Berlijnse Muur, verwonder je over bouwwerken als de Dom van Keulen of breng een bezoek aan het sprookjesachtige kasteel Neuschwanstein in Beieren. Duitsland is ook geliefd om zijn landschappen.",
+      "body": "",
+      "tags": ["kamperen", "Duitsland"],
+      "image": "assets/images/snippets/duitsland.jpg",
+      "response": "Duitsland is een waar kampeerparadijs voor jong en oud, weet je al waar je naar toe zou willen gaan?",
+      "actions": [
+        {
+          "name": "Sauerland",
+          "action": "Kamperen in Sauerland"
+        },
+        {
+          "name": "Beieren",
+          "action": "Kamperen in Beieren"
+        }
+      ]
+    },
+
+    {
+      "type": 1,
+      "title": "Kamperen in Sauerland",
+      "short": "Wil je Kamperen in vakantie naar Sauerland, het land met die adembenemende natuur?",
+      "description": "Wil je kamperen Sauerland, het land met die adembenemende natuur? Met vakwerkhuizen, indrukwekkende musea én de typerende Biergarten? Dan zit je hier goed. Bij ons boek je de allerleukste vakanties naar Duitsland en vind je alle (voorbereidende) reisinformatie die je nodig hebt.",
+      "body": "",
+      "tags": ["kamperen", "Sauerland", "Duitsland"],
+      "image": "assets/images/snippets/vakantie.duitsland.jpg"
+    },
+
+    {
+      "type": 2,
+      "title": "ANWB Routeplanner Duitsland",
+      "short": "Met de auto naar Duitsland",
+      "description": "Panorama’s van bergen, glinsterende bergmeren, wijngaarden en Werelderfgoedmonumenten is wat je zoal tegen kan komen tijdens een autovakantie in Duitsland.",
+      "body": "",
+      "tags": ["routeplanner", "Duitsland", "autovakantie"]
+    },
+
+    {
+      "type": 3,
+      "title": "ANWB Wegenatlas Duitsland 2017",
+      "short": "De ANWB Wegenatlas Duitsland, schaal 1:300.000 (1cm = 3 km) biedt geactualiseerd en gedetailleerd kaartwerk. ",
+      "description": "ANWB Wegenatlas Duitsland 2017. Wegenatlas met handzame wegenkaarten met schaal 1:3000.000 met plaatsnameregister, 20 stadsplattegronden met schaal 1:15.000, 18 agglomeratiekaarten schaal 1:100.000 en kaarten met hoofdwegen van Europa schaal 1: 4.000.000.",
+      "body": "",
+      "tags": ["wegenatlas", "duitsland", "kamperen"],
+      "image": "assets/images/snippets/wegenatlas.duitsland.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Campingplatz Am Hohen Hagen",
+      "short": "Op de lichtglooiende camping Am Hohen Hagen zal de intens groene omgeving je verbazen.",
+      "description": "Op Campingplatz Am hohen Hagen is werkelijk overal aan gedacht. De 2 zwembaden op de camping zijn niet standaard te noemen. Met glijbanen en whirlpools wordt dit zwemfestijn voor iedereen een groot feest. Uitgeput van het spelen en zwemmen kun je terecht bij de kiosks aan het zwembad om een hapje en een drankje te halen.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Duitsland", "Beieren"],
+      "image": "assets/images/snippets/camping7.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Camping Schwarzwaldhorn",
+      "short": "Midden in het Zwarte Woud, omgeven door ongerepte natuur, ligt de Charmecamping Schwarzwaldhorn.",
+      "description": "Luxe kamperen in het Zwarte Woud, dat kan. Deze middelgrote camping beschikt over een leuke tent, wat toercaravans en mobilhomes en een trekkershut voor de doorreis. Voor wie graag met eigen kampeermiddel op vakantie gaat: er zijn 26 toeristische staanplaatsen en 16 vaste. De staanplaatsen hebben weids uitzicht en bevinden zich op terrassen onder oude hoogstamfruitbomen.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Duitsland", "Beieren"],
+      "image": "assets/images/snippets/camping8.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Camping- und Ferienpark Wulfener Hals",
+      "short": "Watersporters opgelet. Camping- und Ferienpark Wulfener Hals ligt aan een baai aan de Oostzee.",
+      "description": "Ga je met een eigen kampeermiddel? Dan kun je kiezen uit bijna 400 plekken. Op deze grote camping kun je ook accommodaties huren. Toercaravans, mobilhomes, bungalows en appartementen aan het strand, zwembad of de nabijgelegen golfbaan: voor elke vakantievierder wat wils.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Beieren"],
+      "image": "assets/images/snippets/camping9.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Campingplatz Am Bärenbache",
+      "short": "De terrassencamping ligt midden in de Harz. Op het terrein staan veel bomen die schaduw bieden.",
+      "description": "Vanaf veel plaatsen is er uitzicht op de beboste berghellingen. Er is een beachvolleybalveld. Er worden begeleide wandel- en kanotochten georganiseerd. Het naastgelegen zwembad is gratis toegankelijk. Er is broodservice en sleephulp. Op 1,5 km is een loipe , op 500 m een skilift.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Sauerland"],
+      "image": "assets/images/snippets/camping10.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Komfortcamping KlüthseeCamp & Seeblick",
+      "short": "De camping ligt tussen het Große Segeberger-meer en het Klüth-meer, aan weerszijden van een openbare weg.",
+      "description": "De meeste toeristische staanplaatsen bevinden zich aan de kant van de receptie (Klüthseecamp), waar de meeste faciliteiten zijn. Seeblick is een natuurcamping, met afgescheiden plaatsen tussen bomen en struiken. Er is aanbod van massages, voetverzorging en er is een nagelstudio. Het zwembad is publiek toegankelijk.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Sauerland"],
+      "image": "assets/images/snippets/camping11.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Camping Landal Sonnenberg",
+      "short": "Soms hoef je maar een klein stukje van huis om in een compleet andere wereld te komen. Hoog op een bosrijk plateau liggen de accommodaties van Landal Sonnenberg aan de Moezel.",
+      "description": "Dit grote bungalowpark in Leiwen wordt omringd door wijngaarden en beschikt naast bungalows en appartementen ook over mobilhomes en campingplaatsen. Camping Landal Sonnenberg is een terrassencamping en biedt ruim 400 staanplaatsen aan. Het is een langgerekt, parkachtig aangelegd kampeerterrein met een gevarieerde begroeiing. De staanplaatsen liggen aan straatjes en hebben deels gravel als ondergrond. De bomen en heggen op het kampeerterrein zorgen voor de nodige privacy. Ook zijn er voldoende schaduwrijke plekken te vinden. Je kunt ervoor kiezen om je eigen tent of caravan mee te nemen, maar het is ook mogelijk om een accommodatie te huren.",
+      "body": "",
+      "tags": ["kamperen", "camping", "Sauerland"],
+      "image": "assets/images/snippets/camping12.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "3- of 4-daagse wintersport Sauerland Stern Hotel",
+      "short": "Willingen in het Sauerland is lekker dichtbij!",
+      "description": "Hoe ver is het rijden naar een leuk wintersportgebied? Maar een paar uurtjes! Het Sauerland bied je volop winterplezier. Behalve skiën, sneeuwpoppen maken en sleetje rijden, willen de kinderen vast ook schaatsen. Ook het hotel is een eldorado voor kinderen. Er is enorm veel te doen en in het restaurant smullen ze van populaire kinderhapjes!",
+      "body": "",
+      "tags": ["wintersport", "Sauerland", "ski"],
+      "image": "assets/images/snippets/wintersport7.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "5- of 6-daags More Inclusive Kerstdagen in de sneeuw! - Sauerland Stern",
+      "short": "Kerst in het Sauerland. Het Sauerland Stern hotel heeft tijdens de feestdagen een speciaal Kerstprogramma samengesteld.",
+      "description": "Wil je tijdens Oud en Nieuw verblijven in het Sauerland Stern, klik dan hier voor het speciale Oud en Nieuw arrangement.",
+      "body": "",
+      "tags": ["wintersport", "Sauerland", "ski"],
+      "image": "assets/images/snippets/wintersport8.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "Der Schöne Asten",
+      "short": "Voor echte winterpret hoef je niet ver te rijden. Winterberg in Duitsland is de ideale plek om dicht bij huis de lange latten onder te binden.",
+      "description": "Geniet deze winter in het populaire Winterberg van de schitterende besneeuwde heuvels en de gezellige wintersfeer waar Winterberg om bekend staat. Laat je na een lange winterwandeling, een prachtige langlauftocht of flink wat pistekilometers in de watten leggen in het gemoedelijke hotel Der Schöne Asten (voorheen Asten Village), dat sinds de herfst 2017 onder nieuwe leiding staat. Ontspan in de sauna of het zwembad en laat je verwennen met een heerlijke maaltijd in het restaurant",
+      "body": "",
+      "tags": ["wintersport", "Sauerland", "ski"],
+      "image": "assets/images/snippets/wintersport9.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "3-daags winterarrangement Hotel Grunau",
+      "short": "Geniet van de winterse sferen in het gezellige beierse stadje Bayreuth.",
+      "description": "Geniet van de gezellige kerstsfeer in Bayreuth. Het kerstdorp, dat van half oktober tot eind december het centrum van Bayreuth opluistert zorgt voor een gezellige, oerbeierse kerstsfeer. Drink een Glühwein in een van de gezellige barretjes en geniet van een lekkere beierse snack. Het kasteel Schloss Bayreuth geeft de stad zijn eigen gezicht. Het slot werd in 1753 na een verwostende brand weer geheel opgebouwd en opengesteld voor het publiek. Bezoek de vele prachtige kunstwerken in het slot en geniet van de barokke inrichting.",
+      "body": "",
+      "tags": ["wintersport", "Beieren", "ski"],
+      "image": "assets/images/snippets/wintersport10.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "4-, 5- of 8-daagse wintersport - Landhotel Rosenberger",
+      "short": "Je verblijft midden tussen de ‘wunderschöne Tannenbäume’, vlak bij de grens met Oostenrijk en Tsjechië.",
+      "description": "Je verblijft midden tussen de ‘wunderschöne Tannenbäume’, vlak bij de grens met Oostenrijk en Tsjechië. De prachtige stad Passau ligt op ca. 35 km. Geniet je lekker op de piste? Op ca. 20 minuten rijden vind je skigebied Hochficht- Böhmerwald, met ca. 20 km pistes, 11 liften en sneeuwkanonnen. Schaatsliefhebbers kunnen hun rondjes draaien op de Rannasee, op ca. 3 km van het hotel. En als het echt wintert is zelfs een rondje op het Tsjechische Lipnomeer mogelijk (ca. half uur rijden). Of stap je in de paardenslee voor een romantisch ritje door de bossen? ",
+      "body": "",
+      "tags": ["wintersport", "Beieren", "ski"],
+      "image": "assets/images/snippets/wintersport11.jpg"
+    },
+
+    {
+      "type": 3,
+      "title": "4-, 6 of 8-daagse wintersport Alpenhotel Kronprinz",
+      "short": "Alpenhotel Kronprinz is de ideale uitvalbasis voor de perfecte wintersportvakantie.",
+      "description": "Je verblijft in het rustig gelegen driesterrenhotel Treff Alpenhotel Kronprinz in Berchtesgaden. Het hotel ligt dichtbij de Oostenrijkse grens. De kamers zijn comfortabel ingericht en voorzien van tv, koelkast en radio. Enkele kamers beschikken over een balkon.",
+      "body": "",
+      "tags": ["wintersport", "Beieren", "ski"],
+      "image": "assets/images/snippets/wintersport12.jpg"
+    },
+
+    {
+      "type": 0,
+      "title": "Wat doet de ANWB allemaal?",
+      "short": "Waar staat de ANWB voor en wat doet de ANWB allemaal?",
+      "description": "Waar staan wij voor? Wat doen wij allemaal? Waar kunnen wij jou mee helpen?",
+      "body": "",
+      "tags": ["ANWB", "representatie"],
+      "response": "Ik kan je op vele manieren helpen, denk aan [vakanties], [verzekeringen] of ben je gewoon opzoek naar een [product]? Vraag mij alles!"
+    }
+
+  ]
+}

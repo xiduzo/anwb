@@ -1,0 +1,21 @@
+.c-iris {
+  height: 75px;
+  width: 75px;
+
+  &--big {
+    height: 200px;
+    width: 200px;
+  }
+
+  &--small {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+  }
+
+  &--big,
+  &--small {
+    border-radius: 50%;
+    background: #EFEDED;
+  }
+}

@@ -1,0 +1,119 @@
+.c-snippet {
+  border-radius: 4px;
+  margin: 6px;
+
+  .md-title {
+    font-weight: bold;
+    font-family: ANWB;
+    font-size: 25px;
+    line-height: 1.2em;
+    margin: 0;
+  }
+  .md-subhead {
+    color: #295785;
+  }
+
+  .o-button {
+    font-size: 15px;
+  }
+
+  &--information {
+    min-height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+
+    md-card-content {
+      color: $white;
+      text-shadow: 1px 1px rgba(0,0,0,.5);
+      background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.3), rgba(0,0,0,.1));
+    }
+
+    .md-title {
+      margin: 0 0 0.3em 0.6em;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--tool {
+    background: $accent;
+
+    .tool__header,
+    md-card-content {
+      padding: 25px 25px 0;
+    }
+
+    .tool__header {
+      border-radius: 4px 4px 0 0;
+
+      .md-title {
+        font-style: italic;
+      }
+
+      img {
+        margin-left: -5px;
+        margin-right: 10px;
+        max-height: 75px;
+      }
+    }
+
+    .o-button {
+      margin: 0.7em 0 0.5em;
+      text-transform: capitalize;
+    }
+  }
+
+  &--product {
+    border-bottom: 6px solid $primary;
+
+    .product__image {
+      height: 120px;
+      max-height: 120px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .md-title {
+      font-style: italic;
+      font-size: 22px;
+      margin-bottom: 0.4em;
+    }
+  }
+
+  &--service {
+    background: $primary;
+  }
+
+  &--detail {
+    max-height: 85vh;
+
+    .header__image {
+      height: 250px;
+      max-height: 250px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    md-dialog-content {
+
+      .md-title {
+        margin-top: .75em;
+      }
+
+      p {
+        color: #295785;
+      }
+
+      md-tab-item {
+        font-weight: bold;
+        color: $contrast;
+      }
+    }
+  }
+
+}

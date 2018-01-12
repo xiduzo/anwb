@@ -1,0 +1,85 @@
+// Buttons
+//
+// The primary colors for branding.
+//
+// Markup:
+// <button class="button {{modifier_class}}"> Click me! </button>
+//
+// button--dense - dense button
+// button--accent - Accent button
+// button--success - Success button
+// button--danger - Danger button
+// button--warning - Warning button
+// button--action - Action button
+// button--disabled - Disabled button
+//
+// Styleguide Objects.Buttons
+
+.o-button {
+  border-radius: 8px;
+  padding: 4px 18px;
+  font-size: 17px;
+  text-transform: lowercase;
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
+
+  &--primary {
+    background: linear-gradient(to right, #F48201, #EFAA15);
+
+    &:hover {
+      background: linear-gradient(to right, lighten(#F48201, 5), lighten(#EFAA15, 5));
+    }
+  }
+
+  &--contrast {
+    background-image: linear-gradient(to right, $contrast 0, #1e87cc 100%);
+
+    &:hover {
+      background-image: linear-gradient(to right, lighten($contrast, 5) 0, lighten(#1e87cc, 5) 100%);
+    }
+  }
+
+  &--primary,
+  &--contrast {
+    font-weight: bold;
+    color: $white !important;
+  }
+
+  &--outlined {
+    border: 2px solid #7F9EC3;
+    color: #7F9EC3;
+
+    &:hover {
+      color: $white;
+      background-color: #7F9EC3 !important;
+    }
+  }
+
+  &--action {
+    color: $contrast;
+    border: 2px solid #C0DBEC;
+    border-radius: 50px;
+    background: white;
+    font-size: 16px;
+    padding: 0 18px;
+
+    &:hover {
+      background-color: #C0DBEC !important;
+    }
+
+  }
+
+}
+
+
+.o-button__icon {
+  &--small {
+    height: 16px;
+    width: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    margin-left: 5px;
+  }
+}

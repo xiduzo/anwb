@@ -1,0 +1,31 @@
+// Checkbox
+//
+// Checkboxes.
+//
+// Markup:
+// <div class="checkbox__container">
+//     <input id="checkbox" type="checkbox" id="checkbox">
+//     <label for="checkbox"> Checkbox </label>
+// </div>
+//
+// Styleguide Objects.Checkbox
+
+.checkbox__container {
+
+    display: flex;
+
+    input {
+
+        // Reset the default browser styling
+        margin: 0 1rem 0 0;
+
+        // Styling
+        width: 20px;
+        height: 20px;
+
+    }
+
+    label {
+
+    }
+}

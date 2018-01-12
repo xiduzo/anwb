@@ -1,0 +1,26 @@
+<div layout="column" layout-fill>
+  <md-toolbar class="anwb-toolbar">
+    <div class="md-toolbar-tools" layout layout-align="space-between center">
+      <div>
+        <img class="logo" src="./assets/images/anwb-logo.svg" alt="" ng-click="baseCtrl.reset();">
+      </div>
+      <div layout>
+        <md-button class="md-icon-button" aria-label="basket" hide-xs>
+          <md-icon md-svg-src="basket"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="shield" hide-xs>
+          <md-icon md-svg-src="shield"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="user" hide-xs>
+          <md-icon md-svg-src="user"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="menu" layout layout-align="start start">
+          <md-icon md-svg-src="menu"></md-icon>
+        </md-button>
+      </div>
+    </div>
+  </md-toolbar>
+
+  <main flex data-ui-view="main" layout layout-fill style="z-index: 5; overflow: hidden;"></main>
+
+</div>

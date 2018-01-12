@@ -1,0 +1,95 @@
+// List
+//
+// List.
+//
+// Markup:
+// <div class="g-row12">
+//     <section class="list g-col12--xs g-col4--md">
+//         <div class="list__header" style="background: #2196F3;">
+//             <h1 class="headline" style="color: white;">  Normal list  </h1>
+//         </div>
+//         <div class="list__items">
+//             <div class="list__item">
+//                 <div class="list__item__icon"> [ICON] </div>
+//                 <div class="list__item__content">
+//                     Lorem Ipsum is slechts een ...
+//                 </div>
+//                 <div class="list__item__action"> [ICON]  </div>
+//             </div>
+//         </div>
+//     </section>
+//     <section class="list g-col12--xs g-col4--md">
+//         <div class="list__header" style="background: #2196F3;">
+//             <h1 class="headline" style="color: white;"> Dense list </h1>
+//         </div>
+//         <div class="list__items">
+//             <div class="list__item list__item--dense">
+//                 <div class="list__item__icon"> [ICON] </div>
+//                 <div class="list__item__content">
+//                     Lorem Ipsum is slechts een ...
+//                 </div>
+//                 <div class="list__item__action"> [ICON] </div>
+//             </div>
+//         </div>
+//     </section>
+//     <section class="list g-col12--xs g-col4--md">
+//         <div class="list__header" style="background: #2196F3;">
+//             <h1 class="headline" style="color: white;"> Threeline list </h1>
+//         </div>
+//         <div class="list__items">
+//             <div class="list__item list__item--threeline">
+//                 <div class="list__item__icon"> [ICON] </div>
+//                 <div class="list__item__content">
+//                     <strong>Lorem Ipsum</strong> <br/>
+//                     is slechts een proeftekst uit het<br/>
+//                     drukkerij- en zetterijwezen ...
+//                 </div>
+//                 <div class="list__item__action"> [ICON]  </div>
+//             </div>
+//         </div>
+//     </section>
+// </div>
+//
+// Styleguide Components.List
+
+.list {
+    &__header {
+        padding: 0 16px;
+        min-height: 32px;
+        display: flex;
+        align-items: center;
+    }
+    &__items {
+        .list__item {
+            padding: 8px 16px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+
+            &--threeline {
+                height: 88px;
+                &--dense {
+                    height: 76px;
+                }
+            }
+
+            &--dense {
+                padding: 4px 16px;
+                height: 40px;
+            }
+
+            &__icon {
+                width: 72px;
+            }
+
+            &__content {
+                flex: 1;
+            }
+
+            &__action {
+                align-self: flex-start;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+$c-conversationHeroHeight: 300px;
+
+.c-conversation {
+  margin: 0.5em 0;
+  // Uncommet for animation delay
+  @for $i from 1 to 10 {
+    .c-conversation__item {
+      &:nth-of-type(#{$i}) {
+        md-card {
+          animation-delay: $i * 0.08s;
+        }
+      }
+    }
+  }
+
+  > div {
+    max-width: 1300px;
+    margin: 0 2.5em;
+  }
+
+  .c-conversation__item {
+    margin-bottom: 0.6em;
+
+    md-card {
+      height: 100%;
+    }
+  }
+
+  .c-conversation__hero {
+    height: $c-conversationHeroHeight;
+    margin-bottom: -$c-conversationHeroHeight / 4;
+    background-size: cover;
+    background-position: center center;
+  }
+}

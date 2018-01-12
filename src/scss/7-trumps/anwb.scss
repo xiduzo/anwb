@@ -1,0 +1,24 @@
+$logo-size: 58px;
+
+.anwb-toolbar {
+  border-bottom: 8px solid $primary;
+  z-index: 20;
+  background-color: white !important;
+
+  @media screen and (max-width: 480px) {
+    border-bottom: 10px solid $primary;
+  }
+
+  .logo {
+    height: $logo-size;
+    top: 24px;
+    left: 32px;
+    position: relative;
+
+    @media screen and (max-width: 480px) {
+      height: $logo-size * 0.75;
+      top: 3px;
+      left: 8px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.t-text {
+  &__color {
+    &--primary { color: $primary; }
+    &--contrast { color: $contrast; }
+  }
+
+  &__align {
+    &--center { text-align: center; }
+  }
+
+  &__weight {
+    &--bold { font-weight: bold; }
+    &--thin { font-weight: 100; }
+  }
+}

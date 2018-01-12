@@ -1,0 +1,51 @@
+// Branding colors
+//
+// The colors for branding.
+//
+// $primary    -  #FFCD00, Primary color
+// $primary_contrast    -  #FFFFFF, Primary contrast color
+// $contrast  -  #003C85, Secondary color
+// $contrast_contrast    -  #FFFFFF, Secondary contrast color
+// $accent     -  #D8E9F3, Accent color
+// $accent_contrast    -  #FFFFFF, Accent contrast color
+//
+// Styleguide Settings.BrandingColors
+$primary:            #FFCD00;
+$primary_contrast:   #FFFFFF;
+$contrast:          #003C85;
+$contrast_contrast: #FFFFFF;
+$accent:            #D8E9F3;
+$accent_contrast:    #000000;
+
+// Action colors
+//
+// Action colors for buttons, fields etc
+//
+// $success  -  #4CAF50, Success color
+// $danger   -  #F44336, Danger color
+// $warning  -  #FF9800, Warning color
+// $action   -  #2196F3, Action color
+// $default  -  #E0E0E0, Default color
+//
+// Styleguide Settings.ActionColors
+
+$success: #4CAF50;
+$danger:  #F44336;
+$warning: #FF9800;
+$action:  #2196F3;
+$default: #E0E0E0;
+
+// Text colors
+//
+// Action colors for buttons, fields etc
+//
+// $disabled -  #BDBDBD, Disabled color
+// $muted    -  #E0E0E0, Muted color
+//
+// Styleguide Settings.TextColors
+
+$disabled: #BDBDBD;
+$muted:    #E0E0E0;
+
+$white: #FFFFFF;
+$black: #000000;

@@ -1,0 +1,83 @@
+$message-triangle-size: 6px;
+
+.c-chat {
+
+  md-content {
+    background: #F5F5F5;
+  }
+
+  #chatContent {
+    overflow-y: scroll;
+    padding: 15px;
+  }
+
+  .c-iris {
+    animation-delay: 500ms;
+  }
+
+  .md-button {
+    margin: 0 4px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+}
+
+.c-chat__input {
+  z-index: 10;
+  background: #F3F3F3;
+  padding: 15px;
+
+  .c-chat__input__group {
+    border-radius: 50px;
+    border: 2px solid #C0DBEC;
+    background: $white;
+
+    .field {
+      background: $white;
+      border-radius: 50px;
+      border: none;
+      padding: 0 16px;
+      height: 44px;
+    }
+  }
+}
+
+.c-chat__message {
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  position: relative;
+  max-width: 90%;
+  background: #ffffff;
+  min-height: 24px;
+  font-size: 15px;
+  border-bottom: 2px solid #E3E3E3;
+
+  .waiting-circle {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: $contrast;
+    border-radius: 50%;
+
+    &:not(:last-of-type) {
+      margin-right: 4px;
+    }
+
+    @for $i from 1 to 10 {
+      &:nth-of-type(#{$i}) {
+        animation-delay: $i * 0.1s;
+      }
+    }
+  }
+
+  &--question {
+  }
+
+  &--answer {
+    background: $accent;
+    border-bottom: 2px solid #C0DBEC;
+  }
+}

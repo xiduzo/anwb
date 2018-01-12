@@ -1,0 +1,38 @@
+// Input containers
+//
+// Input fields.
+//
+// Markup:
+// <div class="input__container {{modifier_class}}">
+//     <input required type="text" placeholder=""></input>
+//     <label>Input label</label>
+// </div>
+//
+// input__container--dense - Dense input container
+//
+// Styleguide Objects.InputContainers
+
+.o-input {
+  border-radius: 8px;
+  border: 2px solid darken($accent, 10);
+  padding: 8px 6px;
+  background: $white;
+  margin: .25em 0 .5em;
+  color: #295785;
+  font-size: 18px;
+  font-family: Verdana, Geneva, sans-serif;
+
+  &:active,
+  &:focus {
+    border: 2px solid #0096DB;
+  }
+
+  &__label {
+    color: #295785;
+    font-size: 14px;
+    &:not(:first-of-type) {
+      margin-top: 0.33em;
+    }
+  }
+
+}

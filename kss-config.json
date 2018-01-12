@@ -1,0 +1,17 @@
+{
+    "title":       "Project Styleguide",
+    "mask":        "*.scss",
+    "placeholder": "[modifier]",
+
+    "//":          "relative to this file.",
+    "builder":     "node_modules/michelangelo/kss_styleguide/custom-template/",
+    "source":      "src/",
+    "destination": "kss_styleguide/",
+
+    "//":          "relative to source.",
+    "homepage":    "kss-styleguide.md",
+
+    "//":          "relative to the generated style guide.",
+    "css":         ["../.tmp/serve/app/index.css"],
+    "js":          []
+}

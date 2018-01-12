@@ -1,0 +1,70 @@
+// Radio button
+//
+// Radio button.
+//
+// Markup:
+// <label class="radio__container radio__container--{{modifier_class}}">
+//     <input {{modifier_class}} name="radio" type="radio">
+//     <span class="outer">
+//         <span class="inner"></span>
+//     </span>
+//     Radio button
+// </label>
+//
+// disabled - Disabled radio button
+//
+// Styleguide Objects.RadioButton
+
+.radio__container {
+
+    display: inline-block;
+    cursor: pointer;
+
+    > input {
+        // Hide input, but leave it available for tabbing
+        // Oh the HaXx0rzz
+        opacity: 0;
+        margin: 0;
+
+        &:checked {
+            + .outer {
+                border: 2px solid $primary;
+                .inner { transform: scale(1); }
+            }
+        }
+    }
+
+    .outer {
+        display: block;
+        float: left;
+        border: 2px solid lighten(black, 25);
+        border-radius: 50%;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inner {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $primary;
+            transform: scale(0);
+            transition: all .25s;
+        }
+    }
+
+    &--disabled {
+        cursor: not-allowed;
+        color: $disabled;
+
+        .outer {
+            border: 2px solid $disabled;
+        }
+    }
+
+
+}

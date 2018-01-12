@@ -1,0 +1,115 @@
+// Chip
+//
+// Chip.
+//
+// Markup:
+// <span class="chip {{modifier_class}}">
+//     <div class="chip__initials"> SB </div>
+//     <div class="chip__image"></div>
+//     <div class="chip__content">
+//         Chip content
+//         <span class="chip__content__after">after</span>
+//     </div>
+//     <div class="chip__remove">
+//         <i class="fa fa-times-circle" aria-hidden="true"></i>
+//     </div>
+// </span>
+//
+// chip--remove - Chip with close button
+// chip--initials - Chip with initials in front
+// chip--image - Chip with image in front
+// chip--selected - Selected chip
+//
+// Styleguide Objects.Chip
+
+.chip {
+    background: $default;
+    line-height: 32px;
+    font-size: 14px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 12px;
+    color: darken(white, 87);
+
+    // This :not's are just for the styleguide
+    // Could be removed, but meh t(ツ)_/¯
+    &:not(.chip--remove) {
+        .chip__remove { display: none; }
+    }
+
+    &:not(.chip--initials) {
+        .chip__initials { display: none; }
+    }
+
+    &:not(.chip--image) {
+        .chip__image { display: none; }
+    }
+
+    &:hover {
+        color: white;
+        background: darken($default, 30);
+        cursor: pointer;
+        &_remove {
+            color: white;
+        }
+    }
+
+    &--selected {
+        background: $primary;
+        color: $primary_contrast;
+        &:hover {
+            background: darken($primary, 15);
+        }
+    }
+
+    &__content {
+        font-weight: bold;
+        &__after {
+            font-weight: lighter;
+            &:before { content: "("; }
+            &:after { content: ")"; }
+        }
+    }
+
+    &__remove {
+        padding: 0 4px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__initials,
+    &__image {
+        width: 32px;
+        height: 32px;
+        margin: 0 8px 0 0;
+        border-radius: 50%;
+    }
+
+    &__initials {
+        background: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary_contrast;
+        font-weight: bold;
+    }
+
+    &__image {
+        background-image: url('http://www.sheffield.com/wp-content/uploads/2013/06/placeholder.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &--remove {
+        padding: 0 0 0 12px;
+    }
+
+    &--initials,
+    &--image {
+        padding: 0 12px 0 0;
+    }
+}

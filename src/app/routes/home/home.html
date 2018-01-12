@@ -1,0 +1,146 @@
+<section layout="column" layout-fill>
+  <section layout flex style="z-index: 5;">
+    <md-sidenav md-whiteframe=3 class="fadeInLeft c-chat" flex=25 ng-class="{'animated': homeCtrl.start}" md-is-locked-open="$mdMedia('gt-sm')" ng-if="homeCtrl.start" hide-xs hide-sm>
+
+      <md-content layout="column" layout-fill layout-align="space-between" style="overflow: hidden;">
+
+        <div flex id="chatContent" class="g-scrollbar">
+          <section layout="column" layout-align="end">
+            <div ng-repeat="dialog in homeCtrl.conversation | orderBy : 'datetime'" id="conversation_chat_{{$index}}">
+
+              <div ng-if="dialog.question" layout layout-align="end center" flex>
+                <span class="c-chat__message c-chat__message--question" ng-bind-html="dialog.question"></span>
+              </div>
+
+              <div layout="column" layout-align="start start">
+                <div layout layout-align="start start" flex ng-if="dialog.answer.text">
+                  <img class="c-iris--small" src="assets/images/iris.png" alt="">
+                  <div ng-if="!dialog.showMessage" layout flex class="c-chat__message c-chat__message--answer">
+                    <span class="animated fadeIn infinite waiting-circle" ng-repeat="x in [1,2,3]">
+                    </span>
+                  </div>
+                  <div ng-if="dialog.showMessage" flex class="c-chat__message c-chat__message--answer animated fadeIn" flex ng-bind-html="dialog.answer.text"></div>
+                  <div flex=5></div>
+                </div>
+                <div ng-if="dialog.showMessage && $last" layout-fill layout layout-align="end" ng-if="dialog.answer.actions.length > 0">
+                  <md-button class="o-button o-button--action" ng-repeat="action in dialog.answer.actions" ng-click="homeCtrl.processInput(action.action);">
+                    {{ action.text }}
+                  </md-button>
+                </div>
+              </div>
+
+            </div>
+          </sectiont>
+        </div>
+
+      </md-content>
+
+    </md-sidenav>
+
+    <section ng-if="!homeCtrl.start" flex>
+      <div class="c-empty-state c-empty-state--home" flex layout="column" layout-fill>
+        <div flex layout="column" layout-align="center center">
+            <img class="c-iris--big" src="assets/images/iris.png" alt="">
+            <h1 class="md-headline" style="margin: 1.25em 0 0">
+              <strong class="t-text__color--contrast">
+                Welkom bij de ANWB!
+              </strong>
+            </h1>
+            <p class="md-subhead t-text__align--center t-text__color--contrast" style="margin-bottom: 1.25em">
+              Ik ben Iris, jouw persoonlijke assistent. <br>
+              Vertel me waar je naar opzoek bent, <br>
+              of stel me gerust een vraag.
+            </p>
+            <div layout="column" layout-gt-sm="row" hide-xs hide-sm>
+              <md-button class="o-button o-button--outlined" ng-click="homeCtrl.processInput('Ik ben opzoek naar een vakantie.')">
+                Ik wil op vakantie
+              </md-button>
+              <md-button class="o-button o-button--outlined">
+                Ik wil een verzekering
+              </md-button>
+              <md-button class="o-button o-button--outlined">
+                Ik wil een product kopen
+              </md-button>
+            </div>
+            <div layout="column" layout-gt-sm="row" hide-xs hide-sm>
+              <md-button class="o-button o-button--outlined">
+                Ik wil een route plannen
+              </md-button>
+              <md-button class="o-button o-button--outlined">
+                Ik wil verkeersinformatie
+              </md-button>
+            </div>
+            <div hide-gt-sm>
+              <md-button class="o-button o-button--outlined">
+                Help me out please
+              </md-button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-conversation g-scrollbar" ng-if="homeCtrl.conversation.length >= 1 && homeCtrl.start" flex style="overflow-y: scroll;" id="conversationContent">
+      <div ng-repeat="dialog in homeCtrl.conversation | orderBy : 'datetime'" id="conversation_item_{{$index}}">
+        <div layout layout-wrap>
+
+          <div flex=100 layout layout-align="end" layout-padding hide-gt-sm>
+            <div class="c-chat__message c-chat__message--question" md-whiteframe=1 ng-bind-html="dialog.question"></div>
+          </div>
+
+          <div style="padding: 8px;" flex=100 layout layout-align="start start" flex ng-if="dialog.answer.text" hide-gt-sm>
+            <img class="c-iris--small" src="assets/images/iris.png" alt="" ng-if="$last">
+            <div ng-if="!dialog.showMessage" layout flex class="c-chat__message c-chat__message--answer">
+              <span class="animated fadeIn infinite waiting-circle" ng-repeat="x in [1,2,3]">
+              </span>
+            </div>
+            <div ng-if="dialog.showMessage" class="c-chat__message c-chat__message--answer animated fadeIn" md-whiteframe=1 flex ng-bind-html="dialog.answer.text"></div>
+            <div flex=5></div>
+          </div>
+
+
+          <div ng-if="dialog.snippets.length > 0 && (dialog.showMessage && dialog.answer)"
+            class="c-conversation__item"
+            ng-repeat="snippet in dialog.snippets"
+            flex-xs={{snippet.width.xs}}
+            flex-gt-xs={{snippet.width.sm}}
+            flex-gt-sm={{snippet.width.md}}
+            flex-gt-md={{snippet.width.lg}}
+            ng-class="{ 'hide-xs': !$first, 'hide-sm': !$first}">
+
+            <plain-information flex ng-click="homeCtrl.showDetailInfo($event, snippet)" ng-if="snippet.item.type === 1" snippet="snippet" class="animated fadeIn"></plain-information>
+            <plain-tool flex ng-if="snippet.item.type === 2" snippet="snippet" class="animated fadeIn"></plain-tool>
+            <plain-product flex ng-click="homeCtrl.showDetailInfo($event, snippet)" ng-if="snippet.item.type === 3" snippet="snippet" class="animated fadeIn"></plain-product>
+            <plain-service flex ng-click="homeCtrl.showDetailInfo($event, snippet)" ng-if="snippet.item.type === 4" snippet="snippet" class="animated fadeIn"></plain-service>
+          </div>
+
+          <div flex=100 layout="column" layout-align="start start">
+            <div flex ng-if="dialog.showMessage" class="animated fadeIn" layout-fill layout="column" layout-align="center" ng-if="dialog.answer.actions.length > 0" hide-gt-sm>
+              <md-button class="o-button o-button--outlined" ng-repeat="action in dialog.answer.actions" ng-click="homeCtrl.processInput(action.action)">
+                {{ action.text }}
+              </md-button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="c-chat__input" layout md-whiteframe=3>
+    <form layout layout-align="center center" flex ng-submit="homeCtrl.processInput()">
+      <div flex class="c-chat__input__group" layout>
+        <input flex class="field" placeholder="Waar kan ik je me helpen?" autofocus ng-enter="homeCtrl.processInput()" id="botInput" ng-model="homeCtrl.input"></input>
+        <div class="button" layout layout-align="center center" ng-click="homeCtrl.processInput()">
+          <md-button class="md-icon-button" aria-label="send message" hide-xs>
+            <md-icon md-svg-src="send"></md-icon>
+          </md-button>
+        </div>
+      </div>
+      <md-button class="md-icon-button md-raised md-accent" aria-label="mic input" hide-gt-xs>
+        <ng-md-icon icon="mic_none"></ng-md-icon>
+      </md-button>
+    </form>
+  </section>
+
+
+</section>

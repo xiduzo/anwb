@@ -1,0 +1,104 @@
+<md-dialog class="c-snippet c-snippet--detail" aria-label="snippet detail" flex=95 flex-gt-sm=50>
+  <form ng-cloack layout="column">
+    <div layout layout-padding layout-align="end" class="header__image" ng-background={{plainDetailCtrl.snippet.item.image}}>
+      <md-button class="md-raised md-icon-button" aria-label="close model" ng-click="plainDetailCtrl.close()">
+        <ng-md-icon icon="clear"></ng-md-icon>
+      </md-button>
+    </div>
+    <md-dialog-content layout-padding layout layout-align="center">
+      <div flex flex-gt-sm=90>
+        <article>
+          <h1 class="md-title t-text__color--contrast">
+            {{ plainDetailCtrl.snippet.item.title }}
+          </h1>
+          <p>
+            {{ plainDetailCtrl.snippet.item.short }}
+          </p>
+          <p>
+            {{ plainDetailCtrl.snippet.item.description }}
+          </p>
+        </article>
+        <md-tabs md-dynamic-height md-border-bottom>
+          <md-tab label="Lorem ipsum">
+            <md-content layout-padding>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </md-content>
+          </md-tab>
+          <md-tab label="Dolor sit">
+            <md-content layout-padding>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </md-content>
+          </md-tab>
+          <md-tab label="Amet">
+            <md-content layout-padding>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </md-content>
+          </md-tab>
+          <md-tab label="Consectetur adipisicing">
+            <md-content layout-padding>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </md-content>
+          </md-tab>
+        </md-tabs>
+        <div layout layout-align="end" ng-if="plainDetailCtrl.snippet.item.type === 3">
+          <md-button class="o-button o-button--primary" ng-click="plainDetailCtrl.buyProduct()">
+            Koop
+          </md-button>
+        </div>
+      </div>
+    </md-dialog-content>
+  </form>
+  <!-- <form ng-cloack>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>
+          {{ plainDetailCtrl.snippet.item.title }}
+        </h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+    <md-dialog-content layout-padding>
+      <p>
+        {{ plainDetailCtrl.snippet.item.short }}
+      </p>
+      <p>
+        {{ plainDetailCtrl.snippet.item.description }}
+      </p>
+    </md-dialog-content>
+    <md-dialog-actions layout ng-if="plainDetailCtrl.snippet.item.type === 3">
+      <span flex></span>
+      <md-button class="md-raised o-button o-button--primary" ng-click="plainDetailCtrl.buyProduct()">
+        Koop
+      </md-button>
+    </md-dialog-actions>
+  </form> -->
+  <!-- <img src="assets/images/snippets/detail.png" alt="" ng-click="plainDetailCtrl.close()"> -->
+</md-dialog>

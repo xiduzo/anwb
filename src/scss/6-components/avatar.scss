@@ -1,0 +1,15 @@
+$c-avatar-size: 90px;
+
+.c-avatar {
+  width: $c-avatar-size;
+  height: $c-avatar-size;
+  min-width: $c-avatar-size;
+  max-width: $c-avatar-size;
+  min-height: $c-avatar-size;
+  max-height: $c-avatar-size;
+
+  // border-radius: 50%;
+
+  background-position: center;
+  background-size: cover;
+}

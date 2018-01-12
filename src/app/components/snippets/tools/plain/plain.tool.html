@@ -1,0 +1,118 @@
+<md-card class="c-snippet c-snippet--tool">
+  <div class="tool__header" layout layout-align="start center">
+    <div ng-if="plainToolCtrl.snippet.item.image">
+      <img ng-src="{{plainToolCtrl.snippet.item.image}}" alt="">
+    </div>
+    <div layout="column">
+      <div flex class="md-title t-text__color--contrast">
+        {{ plainToolCtrl.snippet.item.title }}
+      </div>
+      <div class="md-subhead">
+        {{ plainToolCtrl.snippet.item.short}}
+      </div>
+    </div>
+  </div>
+  <md-card-content flex>
+    <section layout="column" layout-align="space-between" ng-if="plainToolCtrl.snippet.item.title == 'Zoek je vakantie met ledenvoordeel'">
+      <div layout="column">
+        <label class="o-input__label" for="vakantiesoort">Vakantiesoort</label>
+        <select class="o-input" id="vakantiesoort" ng-model="plainToolCtrl.holidayType">
+          <option value=""></option>
+          <option value="gaan kamperen">Kamperen</option>
+          <option value="op wintersport">Wintersport</option>
+        </select>
+        <label class="o-input__label" for="land">Land</label>
+        <select class="o-input" id="land" ng-model="plainToolCtrl.holidayDestination">
+          <option value=""></option>
+          <option value="frankrijk">Frankrijk</option>
+          <option value="duitsland">Duitsland</option>
+        </select>
+        <label class="o-input__label" for="reisgezelschap">Reisgezelschap</label>
+        <select class="o-input" id="reisgezelschap">
+          <option value=""></option>
+          <option value="groepsreis">Groepsreis</option>
+          <option value="individueel">Individuele reis</option>
+        </select>
+        <label class="o-input__label" for="reisduur">Reisduur</label>
+        <select class="o-input" id="reisduur">
+          <option value=""></option>
+          <option value="1-2">1-2 weken</option>
+          <option value="2-3">2-3 weken</option>
+          <option value="3-4">3-4 weken</option>
+        </select>
+      </div>
+      <div layout>
+        <md-button layout layout-align="start center" class="o-button o-button--contrast" ng-click="plainToolCtrl.searchHoliday()">
+          Zoek <md-icon md-svg-src="send_white" class="o-button__icon o-button__icon--small"></md-icon>
+        </md-button>
+      </div>
+    </section>
+    <section layout-fill layout="column" ng-if="plainToolCtrl.snippet.item.title == 'ANWB Routeplanner Duitsland'">
+      <div layout="column">
+        <input class="o-input" id="van" placeholder="Van: adres, postcode en/of plaats" type="text" name="" value="">
+        <input class="o-input" id="naar" placeholder="Naar: adres, postcode en/of plaats" type="text" name="" value="">
+      </div>
+      <div layout>
+        <md-button class="o-button o-button--contrast">
+          Plan route <md-icon md-svg-src="send_white" class="o-button__icon o-button__icon--small"></md-icon>
+        </md-button>
+      </div>
+    </section>
+    <section layout-fill layout="column" ng-if="plainToolCtrl.snippet.item.title == 'Wintersport Frankrijk'">
+      <div layout="column">
+        <label class="o-input__label" for="waar">Waar wil je heen?</label>
+        <select class="o-input" id="waar" ng-model="plainToolCtrl.skiTripDestination">
+          <option value=""></option>
+          <option value="Avoriaz">Avoriaz</option>
+          <option value="Morzine">Morzine</option>
+        </select>
+        <label class="o-input__label" for="type">Welk vakantietype?</label>
+        <select class="o-input" id="type">
+          <option value=""></option>
+          <option value="Camping">Camping</option>
+          <option value="All inclusive">All inclusive</option>
+          <option value="Hotel">Hotel</option>
+        </select>
+        <label class="o-input__label" for="wie">Met wie reis je?</label>
+        <select class="o-input" id="wie">
+          <option value=""></option>
+          <option value="Met">Met kinderen</option>
+          <option value="Zonder">Zonder kinderen</option>
+        </select>
+      </div>
+      <div layout>
+        <md-button class="o-button o-button--contrast" ng-click="plainToolCtrl.searchSkiTrip()">
+          Zoek <md-icon md-svg-src="send_white" class="o-button__icon o-button__icon--small"></md-icon>
+        </md-button>
+      </div>
+    </section>
+    <section layout-fill layout="column" ng-if="plainToolCtrl.snippet.item.title == 'Wintersport Duitsland'">
+      <div layout="column">
+        <label class="o-input__label" for="waar">Waar wil je heen?</label>
+        <select class="o-input" id="waar" ng-model="plainToolCtrl.skiTripDestination">
+          <option value=""></option>
+          <option value="Sauerland">Sauerland</option>
+          <option value="Beieren">Beieren</option>
+        </select>
+        <label class="o-input__label" for="type">Welk vakantietype?</label>
+        <select class="o-input" id="type">
+          <option value=""></option>
+          <option value="Camping">Camping</option>
+          <option value="All inclusive">All inclusive</option>
+          <option value="Hotel">Hotel</option>
+        </select>
+        <label class="o-input__label" for="wie">Met wie reis je?</label>
+        <select class="o-input" id="wie">
+          <option value=""></option>
+          <option value="Met">Met kinderen</option>
+          <option value="Zonder">Zonder kinderen</option>
+        </select>
+      </div>
+      <div layout>
+        <md-button class="o-button o-button--contrast" ng-click="plainToolCtrl.searchSkiTrip()">
+          Zoek <md-icon md-svg-src="send_white" class="o-button__icon o-button__icon--small"></md-icon>
+        </md-button>
+      </div>
+    </section>
+  </md-card-content>
+</md-card>
